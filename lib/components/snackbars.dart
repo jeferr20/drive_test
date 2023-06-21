@@ -7,6 +7,7 @@ void snackCorreoNoValido() {
     "Ingrese un correo valido",
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
+    isDismissible: true,
     snackPosition: SnackPosition.BOTTOM,
     icon: const Icon(
       Icons.add_alert,
@@ -24,6 +25,7 @@ void snackContraNoValida() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -40,6 +42,7 @@ void snackContraCorta() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -56,6 +59,7 @@ void snackContraDebil() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -72,6 +76,7 @@ void snackNombreNoValido() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -88,6 +93,7 @@ void snackNumeroNoValido() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -104,6 +110,7 @@ void snackErrorInicioSesion() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -120,6 +127,7 @@ void snackInicioSesionCorrecto() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -136,6 +144,7 @@ void snackErrorCrearCuenta() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -152,6 +161,7 @@ void snackUsuarioCreado() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -168,6 +178,7 @@ void snackLinkEviado() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -184,6 +195,7 @@ void snackLinkNoEviado() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -200,6 +212,7 @@ void snackUsuarioNoEncontrado() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -216,6 +229,7 @@ void snackPasswordDistintas() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
@@ -232,6 +246,7 @@ void snackPreguntasFaltantes(List<int> preguntasSinResponder) {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
+    isDismissible: true,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
