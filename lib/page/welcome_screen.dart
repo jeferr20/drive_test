@@ -4,6 +4,7 @@ import 'package:drive_test/page/licencias_screen.dart';
 import 'package:drive_test/page/map_screen.dart';
 import 'package:drive_test/page/profile_screen.dart';
 import 'package:drive_test/page/resultados_screen.dart';
+import 'package:drive_test/page/setting_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -48,7 +49,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       animationDuration: const Duration(milliseconds: 250),
       animateChildDecoration: true,
       rtlOpening: false,
-      disabledGestures: false,
+      disabledGestures: true,
       childDecoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(25)),
       ),
@@ -84,6 +85,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               TextButton(
                 child: Text(
                   widget.userName,
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     color: const Color.fromARGB(255, 255, 255, 255),
                     fontSize: 30,
@@ -92,7 +94,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 ),
                 onPressed: () {
                   setState(() {
-                    _currentScreen = const ProfileScreen();
+                    _currentScreen = const ProfileScreen(
+                      esDrawer: true,
+                    );
                     titulo = 'Perfil';
                   });
                   _advancedDrawerController.hideDrawer();
@@ -169,6 +173,24 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               ListTile(
                 onTap: () {
+                  setState(() {
+                    _currentScreen = const SettingScreen();
+                    titulo = 'Configuración';
+                  });
+                  _advancedDrawerController.hideDrawer();
+                  //AuthController.instace.cerrarSesion();
+                },
+                leading: const Icon(Icons.settings),
+                title: Text(
+                  'Configuración',
+                  style: GoogleFonts.poppins(
+                    fontSize: 19,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
                   AuthController.instace.cerrarSesion();
                 },
                 leading: const Icon(Icons.logout),
@@ -186,6 +208,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       ),
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.transparent,
           title: Text(titulo, style: Theme.of(context).textTheme.titleLarge),
           leading: IconButton(
             onPressed: _handleMenuButtonPressed,

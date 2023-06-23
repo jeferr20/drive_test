@@ -19,7 +19,6 @@ class ResultadosScreen extends StatelessWidget {
         .snapshots();
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(25, 10, 25, 10),
         child: Center(

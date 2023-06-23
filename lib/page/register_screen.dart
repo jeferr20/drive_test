@@ -64,9 +64,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/logoDriveTest.png', width: w, height: h * 0.25),
+            Image.asset('assets/logoDriveTest.png', width: w, height: h * 0.22),
             Container(
-              height: 588,
+              height: h - h * 0.22,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.background,

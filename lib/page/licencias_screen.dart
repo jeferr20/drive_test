@@ -10,7 +10,7 @@ class LicenciasScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     RxString categoriaSelect = ''.obs;
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      //backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: Center(

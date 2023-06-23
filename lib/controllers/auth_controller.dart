@@ -12,6 +12,10 @@ class AuthController extends GetxController {
   late Rx<User?> user;
   FirebaseAuth auth = FirebaseAuth.instance;
   final _googleSignIn = GoogleSignIn();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
+  DateTime? selectedDate;
 
   @override
   void onReady() {

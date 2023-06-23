@@ -7,14 +7,14 @@ void snackCorreoNoValido() {
     "Ingrese un correo valido",
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
-    isDismissible: true,
+    isDismissible: false,
     snackPosition: SnackPosition.BOTTOM,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -25,13 +25,13 @@ void snackContraNoValida() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -42,13 +42,13 @@ void snackContraCorta() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -59,13 +59,13 @@ void snackContraDebil() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -76,13 +76,13 @@ void snackNombreNoValido() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -93,13 +93,13 @@ void snackNumeroNoValido() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -110,13 +110,13 @@ void snackErrorInicioSesion() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -127,13 +127,13 @@ void snackInicioSesionCorrecto() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -144,13 +144,13 @@ void snackErrorCrearCuenta() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -161,13 +161,13 @@ void snackUsuarioCreado() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -178,13 +178,13 @@ void snackLinkEviado() {
     colorText: Colors.white,
     backgroundColor: Colors.lightGreen,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -195,13 +195,13 @@ void snackLinkNoEviado() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -212,13 +212,13 @@ void snackUsuarioNoEncontrado() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -229,13 +229,30 @@ void snackPasswordDistintas() {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
+  );
+}
+
+void snackDatosActualziados() {
+  Get.snackbar(
+    "Actualización exitosa",
+    "Los datos se han actualizado correctamente",
+    colorText: Colors.white,
+    backgroundColor: Colors.lightGreen,
+    snackPosition: SnackPosition.BOTTOM,
+    isDismissible: false,
+    icon: const Icon(
+      Icons.add_alert,
+      color: Colors.white,
+    ),
+    shouldIconPulse: false,
+    duration: const Duration(seconds: 2),
   );
 }
 
@@ -246,12 +263,39 @@ void snackPreguntasFaltantes(List<int> preguntasSinResponder) {
     colorText: Colors.white,
     backgroundColor: Colors.redAccent,
     snackPosition: SnackPosition.BOTTOM,
-    isDismissible: true,
+    isDismissible: false,
     icon: const Icon(
       Icons.add_alert,
       color: Colors.white,
     ),
     shouldIconPulse: false,
-    duration: const Duration(seconds: 3),
+    duration: const Duration(seconds: 2),
   );
+}
+
+void dialogFechaNoValida() {
+  Get.defaultDialog(
+      title: 'Debe ser mayor de 18 años',
+      middleText: 'Por favor, seleccione una fecha de nacimiento válida.',
+      backgroundColor: Get.theme.colorScheme.background,
+      titleStyle: Get.textTheme.headlineMedium,
+      middleTextStyle: Get.textTheme.displayMedium,
+      radius: 30,
+      textCancel: 'Ok',
+      titlePadding: const EdgeInsets.all(10),
+      contentPadding: const EdgeInsets.all(10));
+}
+
+void dialogAbout() {
+  Get.defaultDialog(
+      title: 'DriveTest',
+      middleText:
+          'La aplicación móvil DriveTest es una plataforma accesible y personalizable que ayuda a los aspirantes a conductores a prepararse de manera efectiva para el examen de reglas del Ministerio de Transportes y Comunicaciones (MTC). Con contenido completo y actualizado, una interfaz intuitiva, flexibilidad de estudio y un banco de preguntas desafiante, DriveTest busca incrementar las tasas de aprobación y contribuir a un sistema de transporte más seguro y eficiente. Nuestra aplicación ofrece una experiencia de estudio adaptada a las necesidades individuales de cada usuario, brindándoles los recursos necesarios para una preparación exitosa.',
+      backgroundColor: Get.theme.colorScheme.background,
+      titleStyle: Get.textTheme.headlineMedium,
+      middleTextStyle: Get.textTheme.bodySmall,
+      radius: 30,
+      textCancel: 'Cerrar',
+      titlePadding: const EdgeInsets.all(10),
+      contentPadding: const EdgeInsets.all(10));
 }

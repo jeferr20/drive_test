@@ -1,5 +1,6 @@
 import 'package:drive_test/controllers/preguntas_controller.dart';
 import 'package:drive_test/controllers/quiz_controller.dart';
+import 'package:drive_test/controllers/theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -9,6 +10,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.put(ThemeController());
     Get.put(PreguntasController());
     Get.put(QuizzController());
     return Container(

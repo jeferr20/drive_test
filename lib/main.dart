@@ -12,6 +12,7 @@ void main() async {
   runApp(GetMaterialApp(
     theme: lighTheme,
     darkTheme: darkTheme,
+    themeMode: ThemeMode.system,
     debugShowCheckedModeBanner: false,
     home: const SplashScreen(),
   ));
